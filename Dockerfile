@@ -1,4 +1,5 @@
+ARG VERSION
 FROM scratch
 ARG TARGETARCH
-ARG VERSION
-FROM cdkbot/hostpath-provisioner-$TARGETARCH:$VERSION
+
+FROM cdkbot/hostpath-provisioner-${TARGETARCH}:${VERSION}
